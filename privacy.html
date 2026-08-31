@@ -21,15 +21,15 @@
 <body>
 <header><h1>SpotPocket プライバシーポリシー / Privacy Policy</h1></header>
 <main>
-<p class="updated">最終更新日 / Last updated: 2026-07-21</p>
+<p class="updated">最終更新日 / Last updated: 2026-08-29</p>
 
 <h2>日本語</h2>
 
 <h3>基本方針</h3>
-<p>SpotPocket（以下「本アプリ」）は、個人情報を含むいかなるデータも外部サーバーへ送信・収集しません。本アプリが取り扱うすべてのデータは、お使いの端末内にのみ保存されます。</p>
+<p>SpotPocket（以下「本アプリ」）が取り扱う保存データ（URL・タイトル・タグ・メモ・位置情報など）は、すべてお使いの端末内にのみ保存され、開発者のサーバーへ送信・収集されることはありません（開発者はサーバーを運用していません）。広告表示と利用状況の分析のために第三者（Google）との通信が発生しますが、その内容は後述の「利用状況の分析について」「広告について」に限られます。</p>
 
 <h3>収集する情報</h3>
-<p><strong>本アプリは、氏名・メールアドレス・端末識別子・位置情報・利用状況データなど、いかなる個人情報も収集しません。</strong>アカウント登録やログイン機能自体が存在しません。</p>
+<p><strong>本アプリ自体は、氏名・メールアドレス・位置情報など、個人を特定できる情報を収集しません。</strong>アカウント登録やログイン機能自体が存在しません。アプリの改善のために収集する匿名の利用状況データについては「利用状況の分析について」を、広告配信に伴い広告事業者が受け取る情報については「広告について」をご覧ください。</p>
 
 <h3>保存されるデータ</h3>
 <p>本アプリの利用にあたり、以下の情報がお使いの端末内にのみ保存されます（外部への送信はありません）。</p>
@@ -43,9 +43,38 @@
 <h3>ネットワーク通信について</h3>
 <p>本アプリは、ユーザーが共有シートを通じて明示的に選択したURL（Instagram・YouTube・食べログ・その他Webサイト）に対して、タイトル・サムネイル・位置情報などのプレビュー情報を取得するための通信のみを行います。この通信は、共有元のWebページを取得するために必要なものであり、ユーザーの個人情報を第三者に送信するものではありません。</p>
 <ul>
-  <li>通信先は、ユーザーが共有したURLが属するドメイン（例: instagram.com, youtube.com, tabelog.com）に限られます</li>
+  <li>通信先は、ユーザーが共有したURLが属するドメイン（例: instagram.com, youtube.com, tabelog.com）と、利用状況の分析・広告配信のためのGoogleのドメイン（後述）に限られます</li>
   <li>認証情報（ログイン情報・Cookie・トークン等）を送信することはありません</li>
-  <li>分析・広告・トラッキングを目的とした通信は一切行いません</li>
+  <li>トラッキング（複数のアプリやサイトを横断してユーザーを特定する行為）を目的とした通信は行いません。利用状況の分析については次項をご覧ください</li>
+</ul>
+
+<h3>利用状況の分析について</h3>
+<p>本アプリは、アプリの改善のために Google Analytics for Firebase を利用して匿名の利用状況データを収集します。</p>
+<ul>
+  <li><strong>利用目的</strong>: アプリがどの程度利用されているか（起動数・継続利用・機能の利用状況）を把握し、機能を改善するためのプロダクト分析に限ります。広告目的では現在利用していません</li>
+  <li><strong>収集される情報</strong>: 操作イベント（保存・表示・削除といった操作の種類と回数）、アプリのバージョン、端末の機種・OSバージョン、国・地域などの概略情報、および Firebase が本アプリ内でランダムに生成する識別子（アプリインスタンスID）です</li>
+  <li><strong>収集されない情報</strong>: 保存したURL・タイトル・タグ・メモ・フォルダ名・施設名・座標・検索文字列など、保存内容そのものはAnalyticsに一切送信しません。「何を保存したか」ではなく「保存という操作が行われたか」だけを記録します</li>
+  <li>広告識別子（IDFA）は利用せず、Appleのトラッキング許可（App Tracking Transparency）も求めません。氏名・メールアドレス等と結び付くこともありません（そもそもアカウント機能がありません）</li>
+  <li>本アプリを削除すると、アプリインスタンスIDは失われ、以後のデータと結び付けられることはありません</li>
+</ul>
+<p>詳細は以下をご覧ください。</p>
+<ul>
+  <li>Google のプライバシーポリシー: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Firebase のプライバシーとセキュリティ: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+</ul>
+
+<h3>広告について</h3>
+<p>本アプリは、アプリ内の一部のリスト画面に Google AdMob による広告を表示します。広告の運用にあたって、以下の方針を採用しています。</p>
+<ul>
+  <li><strong>非パーソナライズ広告のみ</strong>を配信します。ユーザーの興味関心に基づく広告のターゲティングは行いません</li>
+  <li>Appleのトラッキング許可（App Tracking Transparency）を求めることはなく、広告識別子（IDFA）を利用したトラッキングも行いません</li>
+  <li>本アプリに保存されたデータ（URL・タグ・メモ・位置情報など）が広告配信に利用されることはありません</li>
+  <li>設定画面などからリワード動画広告（非パーソナライズ）を任意で視聴すると、一定期間アプリ内の広告が非表示になります。視聴はユーザーの選択によるもので、視聴状況（広告非表示の期限）は端末内にのみ保存されます</li>
+</ul>
+<p>広告の配信にあたり、Google はデバイスから広告リクエストを受信します。このリクエストには IPアドレス・デバイスの機種やOSバージョンなどの基本的な情報が含まれ、Google が広告の配信・不正防止・表示回数の制御のために処理します。詳細は以下をご覧ください。</p>
+<ul>
+  <li>Google のプライバシーポリシー: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google 広告のしくみ: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
 </ul>
 
 <h3>位置情報について</h3>
@@ -56,7 +85,7 @@
 </ol>
 
 <h3>第三者への提供</h3>
-<p>本アプリは、いかなるデータも第三者に提供・販売・共有しません。</p>
+<p>本アプリは、端末内に保存されたデータを第三者に提供・販売・共有しません。広告配信に伴って Google が受信する情報は「広告について」に記載のとおりです。</p>
 
 <h3>データの削除</h3>
 <p>本アプリを削除（アンインストール）すると、端末内に保存されたすべてのデータは削除されます。</p>
@@ -74,10 +103,10 @@
 <h2>English</h2>
 
 <h3>Overview</h3>
-<p>SpotPocket ("the App") does not collect or transmit any data to external servers. All data handled by the App is stored only on your device.</p>
+<p>All data you save in SpotPocket ("the App") — URLs, titles, tags, notes, and location information — is stored only on your device and is never transmitted to or collected by the developer (the developer operates no servers). The App communicates with a third party (Google) solely for usage analytics and ad serving, as described in the "Usage Analytics" and "Advertising" sections below.</p>
 
 <h3>Information We Collect</h3>
-<p><strong>The App does not collect any personal information</strong> — including your name, email address, device identifiers, location data, or usage analytics. There is no account registration or login feature.</p>
+<p><strong>The App itself does not collect any personally identifiable information</strong> — including your name, email address, or location data. There is no account registration or login feature. For the anonymous usage data collected to improve the App, see "Usage Analytics" below; for information received by the advertising provider when serving ads, see "Advertising" below.</p>
 
 <h3>Data Stored On Your Device</h3>
 <p>The App stores the following information locally on your device only (nothing is transmitted externally):</p>
@@ -91,9 +120,38 @@
 <h3>Network Communication</h3>
 <p>The App only makes network requests to fetch preview information (title, thumbnail, location) for URLs (Instagram, YouTube, Tabelog, or other websites) that you have explicitly selected via the Share Sheet. These requests are limited to what is necessary to load the shared web page's preview data — they do not transmit any personal information to third parties.</p>
 <ul>
-  <li>Requests are made only to the domain of the URL you shared (e.g. instagram.com, youtube.com, tabelog.com)</li>
+  <li>Requests are made only to the domain of the URL you shared (e.g. instagram.com, youtube.com, tabelog.com) and to Google's analytics and ad-serving domains (see below)</li>
   <li>No credentials, login information, cookies, or tokens are ever sent</li>
-  <li>No requests are made for analytics, advertising, or tracking purposes</li>
+  <li>No requests are made for tracking purposes (identifying you across other companies' apps or websites). For usage analytics, see the next section</li>
+</ul>
+
+<h3>Usage Analytics</h3>
+<p>The App uses Google Analytics for Firebase to collect anonymous usage data in order to improve the App.</p>
+<ul>
+  <li><strong>Purpose</strong>: strictly product analytics — understanding how much the App is used (launches, retention, feature usage) and improving its features. It is not currently used for advertising purposes</li>
+  <li><strong>What is collected</strong>: interaction events (the type and count of actions such as saving, viewing, or deleting a spot), the app version, device model and OS version, coarse country/region information, and a random app-scoped identifier generated by Firebase (the app instance ID)</li>
+  <li><strong>What is NOT collected</strong>: the content you save — URLs, titles, tags, notes, folder names, facility names, coordinates, or search text — is never sent to Analytics. We record only <em>that</em> a save happened, never <em>what</em> was saved</li>
+  <li>The App does not use the advertising identifier (IDFA) and never requests Apple's App Tracking Transparency permission. Analytics data is never linked to your name or email address (the App has no account feature)</li>
+  <li>Deleting the App discards the app instance ID, so no future data can be associated with it</li>
+</ul>
+<p>For details, see:</p>
+<ul>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Privacy and Security in Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+</ul>
+
+<h3>Advertising</h3>
+<p>The App displays ads provided by Google AdMob in some list screens, under the following policy:</p>
+<ul>
+  <li><strong>Only non-personalized ads</strong> are served. Ads are not targeted based on your interests</li>
+  <li>The App never requests Apple's App Tracking Transparency permission and does not use the advertising identifier (IDFA) for tracking</li>
+  <li>Data you save in the App (URLs, tags, notes, location information, etc.) is never used for ad serving</li>
+  <li>You can optionally watch a rewarded video ad (also non-personalized) from the Settings screen to hide all in-app ads for a limited period. Watching is entirely your choice, and the ad-free expiry time is stored only on your device</li>
+</ul>
+<p>To serve ads, Google receives ad requests from your device. These requests include basic information such as your IP address and your device's model and OS version, which Google processes for ad delivery, fraud prevention, and frequency capping. For details, see:</p>
+<ul>
+  <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>How Google uses information from ads: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
 </ul>
 
 <h3>Location</h3>
@@ -104,7 +162,7 @@
 </ol>
 
 <h3>Third-Party Sharing</h3>
-<p>The App does not share, sell, or provide any data to third parties.</p>
+<p>The App does not share, sell, or provide the data stored on your device to third parties. The information Google receives for ad serving is described in the "Advertising" section above.</p>
 
 <h3>Data Deletion</h3>
 <p>Deleting (uninstalling) the App removes all data stored on your device.</p>
